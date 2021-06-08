@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Submission</title>
+</head>
+<body bgcolor="wheat">
+<h1>Name-Nayanika Mishra</h1>
+<h1>Reg No.-20BAI10162</h1>
+<script>
+function submitform(){
+    var t="You have submitted the form";
+    alert(t);
+}
+</script>
+<center>
+<form>
+<center><h1>Form</h1></center>
+<label type="text">First Name</label>
+<input type="text"><br>
+<label type="text">Last name</label>
+<input type="text"><br>
+<label type="text">Registration Number</label>
+<input type="text"><br>
+<label type="text">Email id</label>
+<input type="text"><br>
+<label type="text">Password</label>
+<input type="password"><br>
+<button type="reset">Reset</button>
+<button onClick= "submitform()" >Submit</button>
+</form>
+<script>
+function guessNumber(){
+    //generating a random integer from 1 to 10
+    const random = Math.floor(Math.random()*10)+1
+    // take input from the user
+    let number=parseInt(prompt('Guess a number from 1 to 10: '));
+    //take the input until the guess is correct
+    while(number!== random){
+        number=parseInt(prompt('Guess number from 1 to 10: '));
+    }
+    //check if the guess is correct
+    if(number == random){
+        alert('You guessed the correct number. ');
+    }
+}
+</script>
+<center><h1>Guess the Number game</h1></center>
+<center><img src="log.png" width="400px"></center>
+<center><button onClick="guessNumber()">Click here to play the game</button></center>
+</center>
+</body>
+</html>
